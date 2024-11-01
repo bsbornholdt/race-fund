@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaceFund</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Inline CSS for Hero Section and Other Styles -->
+    <style>
+        /* Hero Section Styles */
+        #hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('path/to/racing-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+
+        #hero > div {
+            position: relative;
+            z-index: 2;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        #hero p.lead {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        #hero a.btn {
+            font-size: 1.2rem;
+            padding: 0.75rem 1.5rem;
+        }
+
+        /* Responsive Adjustments for Hero Section */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.5rem;
+            }
+
+            #hero p.lead {
+                font-size: 1.2rem;
+            }
+
+            #hero a.btn {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">RaceFund</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#business-plan">Business Plan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#beta-entry">Beta Entry</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="text-center text-white vh-100 d-flex justify-content-center align-items-center">
+    <div>
+        <h1>RaceFund</h1>
+        <p class="lead">Crowdfunded Racing Dreams</p>
+        <a href="#about" class="btn btn-primary mt-3">Learn More</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+    <div class="row">
+        <div class="col-lg-6 my-auto">
+            <h2>Democratizing Motorsport</h2>
+            <p>RaceFund bridges the gap between simulation racing and real-world motorsport, creating an affordable, crowdfunded pathway for aspiring drivers to race professionally.</p>
+            <a href="#features" class="btn btn-dark mt-3">Platform Features</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="path/to/about-image.jpg" class="img-fluid rounded shadow" alt="About RaceFund">
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Platform Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Crowdfunded Tournaments</h5>
+                        <p class="card-text">Users pay entry fees that directly fund tournament prizes and sponsorships for top racers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-World Sponsorships</h5>
+                        <p class="card-text">Top sim racers earn real-world sponsorships, covering expenses for real races, gear, and training.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Engagement</h5>
+                        <p class="card-text">A vibrant community allows users to track leaderboards, follow racers, and engage in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Business Plan Section -->
+<section id="business-plan" class="container py-5">
+    <h2 class="text-center mb-5">Business Plan</h2>
+    <div class="row">
+        <div class="col-12">
+            <h4>Executive Summary</h4>
+            <p>RaceFund is a competitive, community-driven platform that provides a new pathway into motorsport by crowdfunding sponsorships through simulator racing tournaments. By allowing users to pay entry fees for tournament participation, we create a direct funding model that supports the top racers’ transition into real-world racing.</p>
+            
+            <h4>Problem Statement</h4>
+            <p>Professional motorsport is financially inaccessible for most aspiring drivers due to high entry costs and a lack of affordable pathways. RaceFund democratizes access to motorsport by using a crowdfunding model to raise entry fees, directly funding winners’ real-life racing opportunities.</p>
+            
+            <h4>Solution</h4>
+            <p>RaceFund enables aspiring racers to leverage their online skills, while fans participate in their journey, fostering a unique community-centric sponsorship model.</p>
+
+            <h4>Market Analysis</h4>
+            <ul>
+                <li><b>Industry Size:</b> Esports and sim racing markets are growing rapidly, offering a large user base.</li>
+                <li><b>Target Audience:</b> Sim racers, motorsport fans, and sponsors interested in community-driven engagement.</li>
+                <li><b>Competitive Edge:</b> Our crowdfunding model enables accessible sponsorships, setting us apart from competitors.</li>
+            </ul>
+
+            <h4>Business Model</h4>
+            <ul>
+                <li><b>Revenue Streams:</b> Entry fees, sponsorships, merchandise sales, and premium content subscriptions.</li>
+                <li><b>Cost Structure:</b> Platform development, marketing, and operational expenses.</li>
+            </ul>
+
+            <h4>Product</h4>
+            <ul>
+                <li><b>Core Features:</b> Multi-tiered tournaments, community engagement, and leaderboard tracking.</li>
+                <li><b>Future Enhancements:</b> Real-time streaming, regional divisions, and customizable fan engagement options.</li>
+            </ul>
+
+            <h4>Go-to-Market Strategy</h4>
+            <p>Initial launch targets sim racing communities, followed by growth through regional tournaments and brand partnerships.</p>
+
+            <h4>Team</h4>
+            <p>Our team includes seasoned professionals in esports, gaming software, community engagement, and business development.</p>
+
+            <h4>Funding Requirements</h4>
+            <p>We are seeking $1 million in seed funding to develop our platform, engage users, and build strategic partnerships.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Beta Race Entry Page -->
+<section id="beta-entry" class="container py-5">
+    <h2 class="text-center mb-5">Beta Race Entry</h2>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow p-4">
+                <h4 class="text-center">Enter a Race</h4>
+                <p class="text-center text-muted">Experience what it’s like to enter a RaceFund tournament!</p>
+                
+                <!-- Tournament Entry Form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="tournamentSelect" class="form-label">Select Tournament</label>
+                        <select id="tournamentSelect" class="form-select">
+                            <option value="1">Formula 1 Virtual Circuit - $20 Entry Fee</option>
+                            <option value="2">Endurance Race Series - $15 Entry Fee</option>
+                            <option value="3">Rally Championship - $25 Entry Fee</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" class="form-control" placeholder="Enter your username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="teamName" class="form-label">Team Name</label>
+                        <input type="text" id="teamName" class="form-control" placeholder="Enter your team name (optional)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <select id="paymentMethod" class="form-select">
+                            <option>Credit Card</option>
+                            <option>PayPal</option>
+                            <option>Stripe</option>
+                        </select>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Enter Tournament</button>
+                    </div>
+                </form>
+                
+                <!-- Mock Tournament Details -->
+                <div class="mt-4">
+                    <h5>Tournament Details</h5>
+                    <p><b>Prize Pool:</b> Sponsorship for real-world racing entry, travel, and training expenses.</p>
+                    <p><b>Leaderboard:</b> Compete to top the leaderboard and secure a place in real racing.</p>
+                    <p class="text-muted">Note: This is a beta preview. Payments are disabled in this demo version.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2>Get in Touch</h2>
+        <p>Interested in RaceFund? Let’s make racing dreams come true.</p>
+        <a href="mailto:info@racefund.com" class="btn btn-primary mt-3">Contact Us</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 RaceFund. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
